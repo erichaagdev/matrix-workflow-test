@@ -1,7 +1,7 @@
 on:
   push:
     branches: [ main ]
-    paths: [ '.github/workflows/on-push-paths.yml' ]
+    paths: [ ${{ github.workflow }} ]
 
 jobs:
   job:
