@@ -1,10 +1,10 @@
 on:
   push:
     branches: [ main ]
-    paths: [ "${{ github.workflow }}" ]
+#    paths: [ "${{ github.workflow }}" ]
 
 jobs:
   job:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Workflow triggered! 1"
+      - run: echo "${{ github.workflow }} triggered!"
