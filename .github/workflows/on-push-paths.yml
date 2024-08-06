@@ -1,0 +1,10 @@
+on:
+  push:
+    branches: [ main ]
+    paths: [ '.github/workflows/on-push-paths.yml' ]
+
+jobs:
+  job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Workflow triggered!"
