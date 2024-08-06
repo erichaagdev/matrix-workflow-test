@@ -3,7 +3,7 @@ on:
     branches: [ main ]
     paths:
       - .github/workflows/on-push-paths.yml
-      - ${{ github.workflow }}
+      - "${{ github.workflow }}"
 
 jobs:
   job:
